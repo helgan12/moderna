@@ -12,6 +12,13 @@ if (navToggle && mainNav) {
   navToggle.addEventListener('click', () => {
     mainNav.classList.toggle('open');
   });
+
+  // Scroll yapılınca mobil menüyü kapat
+  window.addEventListener('scroll', () => {
+    if (mainNav.classList.contains('open')) {
+      mainNav.classList.remove('open');
+    }
+  });
 }
 
 const logoLink = document.getElementById('logo-link');
