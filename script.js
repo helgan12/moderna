@@ -14,14 +14,6 @@ if (navToggle && mainNav) {
   });
 }
 
-function handleFormSubmit() {
-  const status = document.getElementById('form-status');
-  if (!status) return;
-  status.textContent = 'Vielen Dank! Ihre Anfrage wurde lokal erfasst. Bitte konfigurieren Sie noch das endgültige Kontaktformular bzw. die E-Mail-Weiterleitung.';
-}
-
-window.handleFormSubmit = handleFormSubmit;
-
 const logoLink = document.getElementById('logo-link');
 const backToTop = document.getElementById('back-to-top');
 const impressumLink = document.querySelector('a[href="#impressum"]');
